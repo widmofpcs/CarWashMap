@@ -21,5 +21,5 @@ from config.views import HomeView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', HomeView.as_view(), name='home'),
-    path('washes/', include('washes.urls')),
+    path('api-washes/', include('washes.urls')),
 ]
