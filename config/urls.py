@@ -20,6 +20,7 @@ from config.views import HomeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HomeView.as_view(), name='home'),
+    # path('', HomeView.as_view(), name='home'),
     path('api-washes/', include('washes.urls')),
+    path('', include('frontend.urls')),
 ]

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'washes.apps.WashesConfig',
+    'frontend.apps.FrontendConfig',
 ]
 
 MIDDLEWARE = [
